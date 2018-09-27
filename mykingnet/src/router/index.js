@@ -5,10 +5,10 @@ Vue.use(Router);
 
 export default new Router({
     routes: [
-        {
-            path: '/',
-            redirect: '/dashboard'
-        },
+        // {
+        //     path: '/',
+        //     redirect: '/dashboard'
+        // },
         {
             path: '/',
             name:'home',
@@ -37,11 +37,11 @@ export default new Router({
                     component: resolve => require(['../components/page/Film.vue'], resolve),
                     meta: { title: '电影' }
                 },
-                // {
-                //     path: '/form',
-                //     component: resolve => require(['../components/page/BaseForm.vue'], resolve),
-                //     meta: { title: '基本表单' }
-                // },
+                {
+                    path: '/english',
+                    component: resolve => require(['../components/page/English.vue'], resolve),
+                    meta: { title: '英语' }
+                },
                 // {
                 //     // 富文本编辑器组件
                 //     path: '/editor',

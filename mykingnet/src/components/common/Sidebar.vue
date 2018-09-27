@@ -58,6 +58,11 @@
                         index: 'film',
                         title: '电影'
                     },
+                    {
+                        icon: 'el-icon-message',
+                        index: 'english',
+                        title: '英语'
+                    },
                 ]
             }
         },
@@ -84,7 +89,7 @@
     display: block;
     position: absolute;
     left: 0;
-    top: 60px;
+    top: 40px;
     bottom:0;
     overflow-y: scroll;
 }

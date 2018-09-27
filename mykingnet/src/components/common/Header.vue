@@ -1,9 +1,9 @@
 <template>
     <div class="header">
         <!-- 折叠按钮 -->
-        <div class="collapse-btn" @click="collapseChage">
-            <!-- <i class="el-icon-menu"></i> -->
-        </div>
+        <!-- <div class="collapse-btn" @click="collapseChage">
+            <i class="el-icon-menu"></i>
+        </div> -->
         <div class="logo">网址大全</div>
         <div class="header-right">
             <div class="header-user-con">
@@ -14,14 +14,14 @@
                     </el-tooltip>
                 </div>
                 <!-- 消息中心 -->
-                <div class="btn-bell">
+                <!-- <div class="btn-bell">
                     <el-tooltip effect="dark" :content="message?`有${message}条未读消息`:`消息中心`" placement="bottom">
                         <router-link to="/tabs">
                             <i class="el-icon-bell"></i>
                         </router-link>
                     </el-tooltip>
                     <span class="btn-bell-badge" v-if="message"></span>
-                </div>
+                </div> -->
                 <!-- 用户头像 -->
                 <div class="user-avator"><img src="static/img/img.jpg"></div>
                 <!-- 用户名下拉菜单 -->
@@ -113,22 +113,22 @@
         position: relative;
         box-sizing: border-box;
         width: 100%;
-        height: 60px;
-        font-size: 22px;
+        height: 40px;
+        font-size: px;
         color: #fff;
     }
     .collapse-btn{
         float: left;
         padding: 0 21px;
         cursor: pointer;
-        line-height: 60px;
+        line-height: 40px;
     }
     .header .logo{
       position: absolute;
         float: left;
         width:250px;
         left: 30px;
-        line-height: 60px;
+        line-height: 40px;
 
     }
     .header-right{
@@ -137,7 +137,7 @@
     }
     .header-user-con{
         display: flex;
-        height: 60px;
+        height: 40px;
         align-items: center;
     }
     .btn-fullscreen{

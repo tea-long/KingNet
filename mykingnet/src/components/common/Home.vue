@@ -12,12 +12,14 @@
                 </transition>
             </div>
         </div>
+        <v-footer></v-footer>
     </div>
 </template>
 
 <script>
     import vHead from './Header.vue';
     import vSidebar from './Sidebar.vue';
+    import vFooter from './Footer.vue';
     import vTags from './Tags.vue';
     import bus from './bus';
     export default {
@@ -30,7 +32,9 @@
         components:{
             vHead,
             vSidebar,
-            vTags
+            vTags,
+            vFooter
+
         },
         created(){
             bus.$on('collapse', msg => {
@@ -50,6 +54,8 @@
 </script>
 <style scoped>
 .content-box{
+  position: absolute;
+  margin-top: 0;
   left: 140px;
 }
 </style>
